@@ -1,0 +1,13 @@
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\bin\Debug\netcoreapp3.1\Composicao.exe
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\bin\Debug\netcoreapp3.1\Composicao.deps.json
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\bin\Debug\netcoreapp3.1\Composicao.runtimeconfig.json
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\bin\Debug\netcoreapp3.1\Composicao.runtimeconfig.dev.json
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\bin\Debug\netcoreapp3.1\Composicao.dll
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\bin\Debug\netcoreapp3.1\Composicao.pdb
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\obj\Debug\netcoreapp3.1\Composicao.csprojAssemblyReference.cache
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\obj\Debug\netcoreapp3.1\Composicao.AssemblyInfoInputs.cache
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\obj\Debug\netcoreapp3.1\Composicao.AssemblyInfo.cs
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\obj\Debug\netcoreapp3.1\Composicao.csproj.CoreCompileInputs.cache
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\obj\Debug\netcoreapp3.1\Composicao.dll
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\obj\Debug\netcoreapp3.1\Composicao.pdb
+C:\ProgramasCSharp\ConceitoDeComposicao\Composicao\Composicao\obj\Debug\netcoreapp3.1\Composicao.genruntimeconfig.cache
