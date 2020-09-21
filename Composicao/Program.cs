@@ -1,4 +1,4 @@
-﻿using Composicao.Entities;
+﻿using Composicao.Entities; 
 using Composicao.Entities.Enum;
 using System;
 using System.Globalization;
@@ -28,18 +28,18 @@ namespace Composicao
             Console.Write("Name: ");
             string name = Console.ReadLine();
             Console.Write("Level (Junior/MidLevel/Senior): ");
-            WorkerLevel level = Enum.Parse<WorkerLevel>(Console.ReadLine());
+            WorkerLevel level = Enum.Parse<WorkerLevel>(Console.ReadLine()); //Recebe o nível do funcionário como string e é convertida para um objeto do tipo WorkerLevel que é a enumeração.
             Console.Write("Base Salary: ");
             double baseSalary = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Department dept = new Department(deptName);
+            Department dept = new Department(deptName); //Instanciação do objeto Department. Usando a sobre carga que utiliza apenas o Name.
 
-            Worker worker = new Worker(name, level, baseSalary, dept);
+            Worker worker = new Worker(name, level, baseSalary, dept); //Instanciação do objeto Worker com os dados do trabalhador nas variáveis temporárias (name, level, baseSalary, dept).
 
-            Console.WriteLine("How many contracts to this worker? ");
+            Console.Write("How many contracts to this worker? ");
             int n = int.Parse(Console.ReadLine());
 
-            for(int i=1; i<=n; i++)
+            for(int i=1; i<=n; i++) //Estrutura de repetição para ler e instânciar os dados de contrato
             {
                 Console.WriteLine($"Enter #{i} contract data:");
                 Console.Write("Date (DD/MM/YYYY): ");
@@ -48,19 +48,19 @@ namespace Composicao
                 double valuePerHour = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 Console.Write("Duration (hours): ");
                 int hours = int.Parse(Console.ReadLine());
-                HourContract contract = new HourContract(date, valuePerHour, hours);
-                worker.AddContract(contract);
+                HourContract contract = new HourContract(date, valuePerHour, hours); //Instanciação do contrato
+                worker.AddContract(contract); //Adiciona o contrato instanciado acima para a lista de contratos do trabalhador instanciado anteriormente.
             }
 
             Console.WriteLine();
             Console.Write("Enter month and year to calculate income (MM/YYYY): ");
-            string monthAndYear = Console.ReadLine();
-            int month = int.Parse(monthAndYear.Substring(0, 2));
-            int year = int.Parse(monthAndYear.Substring(3));
+            string monthAndYear = Console.ReadLine(); //Variável temporária para ler a data como string
+            int month = int.Parse(monthAndYear.Substring(0, 2)); //Função .Substring para recortar a string e armazenar apenas o mes, limitando o recorte pelas posição definidas na Substring.
+            int year = int.Parse(monthAndYear.Substring(3)); //Função .Substring para recortar a string e armazenar dessa vez apenas o ano.
 
-            Console.WriteLine("Name: " + worker.Name);
-            Console.WriteLine("Department: " + worker.Department.Name);
-            Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Name: " + worker.Name); //Mostra o nome do funcionário
+            Console.WriteLine("Department: " + worker.Department.Name); //Mostra o nome do departamento associado a esse trabalhador
+            Console.WriteLine("Income for " + monthAndYear + ": " + worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture)); //Mostra o ganho total desse trabalhador no mes e ano definido anteriormente. levando em consideração o total de contratos e horas deles junto com seu salário base.
         }
     }
 }
